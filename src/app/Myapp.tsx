@@ -16,7 +16,7 @@ import Contacts from "@/components/Contactus";
 
 const Myapp = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isNav, setisNav] = useState(0);
+  const [isNav, setisNav] = useState('hidden');
 
   const Profile = useRef<HTMLDivElement>(null);
   const Projects = useRef<HTMLDivElement>(null);
@@ -34,13 +34,13 @@ const Myapp = () => {
         behavior: "smooth",
       });
     }
-    isNav === 0 ? setisNav(200) : setisNav(0);
+    isNav === 'hidden' ? setisNav('flex') : setisNav('hidden');
   };
 
   function handleMenu(
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ): void {
-    isNav === 0 ? setisNav(200) : setisNav(0);
+    isNav === 'hidden' ? setisNav('flex') : setisNav('hidden');
   }
 
  
@@ -48,7 +48,7 @@ const Myapp = () => {
   return (
     <div className="sm:w-[400px] w-[100%] relative   flex flex-col mx-auto">
       <div
-        className={` overflow-hidden sm:right-0 sm:w-[${isNav}px] md:w-[${isNav}px] sm:bg-[#0e1630] md:bg-[#0e1630] md:right-0 sm:shadow-3xl sm:drop-shadow-2xl w-[200px]     transition-all duration-300   z-50 h-[100%]  flex flex-col   justify-center box-border  fixed right-0   `}
+        className={` overflow-hidden sm:right-0 sm:${isNav} md:${isNav} sm:bg-[#0e1630] md:bg-[#0e1630] md:right-0 sm:shadow-3xl sm:drop-shadow-2xl w-[200px]     transition-all duration-300   z-50 h-[100%]  flex flex-col   justify-center box-border  fixed right-0   `}
         
       >
         <button
