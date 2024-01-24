@@ -48,8 +48,8 @@ const Myapp = () => {
   return (
     <div className="sm:w-[400px] w-[100%] relative   flex flex-col mx-auto">
       <div
-        className={` overflow-hidden sm:right-0 sm:${isNav} md:${isNav} sm:bg-[#0e1630] md:bg-[#0e1630] md:right-0 sm:shadow-3xl sm:drop-shadow-2xl w-[200px]     transition-all duration-300   z-50 h-[100%]  flex flex-col   justify-center box-border  fixed right-0   `}
-        
+        className={` overflow-hidden sm:right-0  sm:bg-[#0e1630] md:bg-[#0e1630] md:right-0 sm:shadow-3xl sm:drop-shadow-2xl w-[200px]     transition-all duration-300   z-50 h-[100%]  flex flex-col   justify-center box-border  fixed right-0   `}
+        style={{display:`${isNav}`}}
       >
         <button
           onMouseDown={handleMenu}
