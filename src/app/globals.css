@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  background-color: #0e1630;
+}
+.lol{
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(95,0,150,1) 0%, rgba(7,2,87,1) 100%);
+
+}
+
+
+.skillItem{
+  box-sizing: 'border-box';
+  padding: 5px;
+  display: flex;
+  color:black;
+  background-color: white;
+  border: .5px solid gray;
+  flex-direction: column;
+  font-size: 20px;
+  margin-right: 5px;
+  border-radius: 10px;
+  align-items: center;
+
+  
+
+  
+}
+
+
+.srl::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0e1630;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4ce6c4;
+  border-radius: 30px;
+  height: 100px;
+}
+
+
+
+
