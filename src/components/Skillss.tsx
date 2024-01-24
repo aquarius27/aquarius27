@@ -12,7 +12,7 @@ const SSkills: React.FC = () =>{
 
 
   return (
-    <main className="  items-center md:h-fit  flex justify-center flex-col sm:text-lg    mx-auto box-border drop-shadow-2xl shadow-2xl">
+    <main className="  items-center  sm:w-full  md:h-fit  flex justify-center flex-col sm:text-lg    mx-auto box-border drop-shadow-2xl shadow-2xl">
       <div className="w-full items-center my-2    flex sm:flex-col">
         <span className="  font-bold  text-2xl text-yellow-500 mx-2 ">Skills:</span>
         <span className="  flex">

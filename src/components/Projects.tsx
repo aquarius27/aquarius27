@@ -12,9 +12,9 @@ const Project = () => {
   }
 
   return (
-    <div className="w-[90%] h-full md:h-fit  drop-shadow-2xl shadow-2xl sm:w-[100%] md:w-[100%] flex flex-col  sm:flex-col mx-auto rounded-3xl justify-center   relative items-center    box-border ">
-      <div className=" box-border text-white sm:text-xl p-4 text-2xl">
-        <h1 className="text-2xl">"Showcasing my skills, experiences, and accomplishments"</h1>
+    <div className="w-[90%]  md:h-fit  drop-shadow-2xl shadow-2xl sm:w-[100%] md:w-[100%] flex flex-col  sm:flex-col mx-auto rounded-3xl justify-center   relative items-center    box-border ">
+      <div className=" box-border text-white sm:text-xl p-4 mt-4">
+        <h1 className="text-2xl sm:text-xl">"Showcasing my skills, experiences, and accomplishments"</h1>
       </div>
 
       {/* Top */}
@@ -25,7 +25,7 @@ const Project = () => {
               E-GrandMart
             </h1>
             <br />
-            <h1 className="w-full font-medium text-center bg-yellow-300 rounded-xl box-border p-1 ">
+            <h1 className="w-full font-medium text-center bg-yellow-300 rounded-md box-border p-1 ">
              MERN Stack
             </h1>
           </span>
@@ -36,13 +36,13 @@ const Project = () => {
             
           </div>
           <div className="flex justify-around items-center ">
-            <button className="bg-yellow-300 font-bold  box-border p-2 rounded-xl">
+            <button className="bg-yellow-300 font-bold  box-border outline-none p-2 rounded-md">
               Live
             </button>
-            <button onClick={CardHandler} className="bg-green-400 font-bold box-border p-2 rounded-xl m-1">
+            <button onClick={CardHandler} className="bg-green-400 outline-none font-bold box-border p-2 rounded-md m-1">
               More
             </button>
-            <button className="bg-yellow-300 font-bold box-border p-2 rounded-xl">
+            <button className="bg-yellow-300 font-bold outline-none box-border p-2 rounded-md">
               <Link href={'https://github.com/vitthalkokare/e-GrandMart'}>Github</Link>
             </button>
           </div>
@@ -55,7 +55,7 @@ const Project = () => {
               E-Classroom
             </h1>
             <br />
-            <h1 className="w-full font-medium text-center bg-yellow-300 rounded-xl box-border p-1 ">
+            <h1 className="w-full font-medium text-center bg-yellow-300 rounded-md box-border p-1 ">
               FullStack
             </h1>
           </span>
@@ -66,13 +66,13 @@ const Project = () => {
            
           </div>
           <div className="flex justify-around items-center">
-          <button className="bg-yellow-300 font-bold  box-border p-2 rounded-xl">
+          <button className="bg-yellow-300 font-bold outline-none box-border p-2 rounded-md">
               Live
             </button>
-            <button onClick={CardHandler} className="bg-green-400 font-bold box-border p-2 rounded-xl m-1">
+            <button onClick={CardHandler} className="bg-green-400 outline-none font-bold box-border  p-2 rounded-md m-1">
               More
             </button>
-            <button className="bg-yellow-300 font-bold  box-border p-2 rounded-xl">
+            <button className="bg-yellow-300 font-bold  box-border outline-none p-2 rounded-md">
               <Link href={'https://github.com/vitthalkokare/e-Classroom'}>Github</Link>
             </button>
           </div>
@@ -86,7 +86,7 @@ const Project = () => {
               ClipCraft
             </h1>
             <br />
-            <h1 className="w-full text-center font-medium bg-yellow-300 rounded-xl box-border p-1 ">
+            <h1 className="w-full text-center font-medium bg-yellow-300 rounded-md box-border p-1 ">
               WebApp
             </h1>
           </span>
@@ -97,13 +97,13 @@ const Project = () => {
            
           </div>
           <div className="flex justify-around items-center">
-          <button className="bg-yellow-300 font-bold  box-border p-2 rounded-xl">
+          <button className="bg-yellow-300 font-bold outline-none  box-border p-2 rounded-md">
               Live
             </button>
-            <button onClick={CardHandler} className="bg-green-400 font-bold box-border p-2 rounded-xl m-1">
+            <button onClick={CardHandler} className="bg-green-400 outline-none font-bold box-border p-2 rounded-md m-1">
               More
             </button>
-            <button className="bg-yellow-300 font-bold  box-border p-2 rounded-xl">
+            <button className="bg-yellow-300 font-bold outline-none  box-border p-2 rounded-md">
               <Link href={'https://github.com/vitthalkokare/ClipCraft'}>GitHub</Link>
             </button>
           </div>
@@ -112,9 +112,9 @@ const Project = () => {
 
       <span className='w-[70%] h-1 box-border absolute bottom-0 bg-white'>.</span>
 
-      <div className="w-[80%] h-[80%] rounded-3xl sm:w-full sm:h-[60%] top-5 box-border m-2 bg-green-600 absolute " style={{display:`${Close}`}}>
+      <div className="w-[80%] h-[80%] p-4 rounded-3xl sm:w-full sm:h-[60%] top-5 box-border m-2 bg-white drop-shadow-xl absolute " style={{display:`${Close}`}}>
         <button onClick={CardHandler} className="box-border px-4 py-2 absolute right-0 bg-black text-white rounded-full">X</button>
-        good
+          Description:
 
       </div>
 

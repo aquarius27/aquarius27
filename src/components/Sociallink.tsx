@@ -11,7 +11,7 @@ const SocilLinks: React.FC = () => {
                 <li className='mx-1'><a href="https://github.com/vitthalkokare"target="_blank" rel="noopener noreferrer"><FaGithub/></a></li>
                 <li className='mx-1'><a href="https://leetcode.com/aquarius27/" target='_blank' rel='noopener noreferrer'><SiLeetcode/></a></li>
                 <li className='mx-1'><a href="https://twitter.com/search?q=%23tech&src=typed_query" target='_blank' rel='noopener noreferrer'><FaTwitter/></a></li>
-                <button className='bg-green-500 box-border font-semibold text-lg p-1 rounded-2xl'><a href="/Vitthalkokare.pdf" download={'./vitthalkokare.pdf'}>Resume</a></button>
+                <button className='bg-green-500 outline-none box-border font-semibold text-lg p-1 rounded-2xl'><a href="/vitthalkokare.pdf" download={'./vitthalkokare.pdf'}>Resume</a></button>
 
             </div> 
   )

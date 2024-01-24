@@ -43,7 +43,8 @@ const Contacts: React.FC = () => {
   }
 
   return (
-   <div className='text-white md:h-fit flex sm:justify-center justify-around w-full items-center flex-col  '>
+   <div className='text-white md:h-fit  flex sm:justify-center justify-around w-full items-center flex-col  '>
+
       <div className='sm:flex-col flex w-full   justify-evenly'>
         <div className='box-border p-3'>
         <h1 className='text-green-400 text-3xl font-normal box-border p-2'>Connect with me</h1>

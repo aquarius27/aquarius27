@@ -22,8 +22,8 @@ body{
   border: .5px solid gray;
   flex-direction: column;
   font-size: 20px;
-  margin-right: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
+  margin: 0px 2px;
   align-items: center;
 
   
@@ -37,7 +37,7 @@ body{
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 /* Track */
@@ -49,7 +49,6 @@ body{
 ::-webkit-scrollbar-thumb {
   background: #4ce6c4;
   border-radius: 30px;
-  height: 100px;
 }
 
 

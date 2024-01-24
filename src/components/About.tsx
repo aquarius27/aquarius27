@@ -12,7 +12,7 @@ const About = () => {
 
   
   return (
-    <div className=' w-full   relative box-border mx-auto p-2     flex flex-col  items-center'>
+    <div className=' w-full sm:mt-14 md:h-fit md:mt-14  relative box-border mx-auto p-2     flex flex-col  items-center'>
 
         <header className='flex sm:flex-col flex-col  items-center justify-center relative w-full rounded-2xl  box-border '>
         
