@@ -4,6 +4,7 @@ import { SiLeetcode } from "react-icons/si";
 import Image from 'next/image';
 import img1 from '.././../public/coverimg.png'
 import SocilLinks from './Sociallink';
+import logo from '../../public/vk.jpg'
 
 const About = () => {
 
@@ -16,7 +17,7 @@ const About = () => {
         <header className='flex sm:flex-col flex-col  items-center justify-center relative w-full rounded-2xl  box-border '>
         
         <div className='relative flex flex-col justify-center items-center   w-[80%]   overflow-hidden  rounded-2xl  right-0 sm:w-full' >
-            <img src="./vk.jpg" alt="vk" className='w-[200px] h-[200px]  rounded-full'  />
+            <Image width={300} height={300} src={logo} alt='logo' className='w-[200px] h-[200px]  rounded-full'  />
         </div>
 
         <div className=' box-border p-2 '>
