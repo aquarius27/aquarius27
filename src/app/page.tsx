@@ -4,7 +4,7 @@ import Myapp from './Myapp'
 const page = () => {
   return (
     <>
-<Myapp/>      
+     <Myapp/>      
     </>
   )
 }
