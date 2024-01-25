@@ -12,14 +12,14 @@ const Project = () => {
   }
 
   return (
-    <div className="w-[90%]  md:h-fit  drop-shadow-2xl shadow-2xl sm:w-[100%] md:w-[100%] flex flex-col  sm:flex-col mx-auto rounded-3xl justify-center   relative items-center    box-border ">
+    <div className=" md:h-fit w-full  drop-shadow-2xl shadow-2xl   flex flex-col  sm:flex-col mx-auto rounded-3xl justify-center   relative items-center    box-border ">
       <div className=" box-border text-white sm:text-xl p-4 mt-4">
         <h1 className="text-2xl sm:text-xl">"Showcasing my skills, experiences, and accomplishments"</h1>
       </div>
 
       {/* Top */}
-      <div className="flex w-[80%] srl    scr md:w-full  sm:w-full overflow-x-scroll p-4   items-center relative   box-border ">
-        <div className="flex   w-[50vw] sm:shrink-0  overflow-hidden bg-white flex-col justify-between sm:w-[70%] relative  drop-shadow-lg  rounded-r-none  box-border p-4 h-[400px] sm:h-[400px] rounded-2xl">
+      <div className="flex w-full srl    scr md:w-full  sm:w-full overflow-x-scroll p-4   items-center relative   box-border ">
+        <div className="flex h-[500px]   w-[30%] sm:shrink-0  overflow-hidden bg-white flex-col justify-between sm:w-[70%] relative  drop-shadow-lg  rounded-r-none  box-border p-4  sm:h-[400px] rounded-2xl">
           <span>
             <h1 className="box-border bg-black font-bold text-center text-white p-2 absolute top-0 left-0 w-full">
               E-GrandMart
@@ -30,12 +30,12 @@ const Project = () => {
             </h1>
           </span>
           <div className="flex flex-col text-black justify-center items-center box-border p-2">
-            <span className="mx-5 text-3xl whitespace-nowrap">
+            <span className="mx-5 md:text-2xl text-3xl whitespace-nowrap">
               <strong>E-GrandMart</strong>
             </span>
             
           </div>
-          <div className="flex justify-around items-center ">
+          <div className="flex box-border md:text-md p-2 justify-around items-center ">
             <button className="bg-yellow-300 font-bold  box-border outline-none p-2 rounded-md">
               Live
             </button>
@@ -49,7 +49,7 @@ const Project = () => {
         </div>
 
         {/* Center */}
-        <div className="flex   w-[50vw] md:w-[90%] sm:shrink-0  overflow-hidden bg-black flex-col justify-between sm:w-[80%] relative  drop-shadow-lg  box-border p-4 h-[450px] sm:h-[500px] rounded-2xl">
+        <div className="flex h-[550px]  w-[40%]  sm:shrink-0  overflow-hidden bg-black flex-col justify-between sm:w-[80%] relative  drop-shadow-lg  box-border p-4  sm:h-[500px] rounded-2xl">
           <span>
             <h1 className="box-border bg-black text-white font-bold text-center p-2 absolute top-0 left-0 w-full">
               E-Classroom
@@ -60,12 +60,12 @@ const Project = () => {
             </h1>
           </span>
           <div className="flex flex-col text-white justify-center items-center box-border p-2">
-            <span className="mx-5 text-4xl whitespace-nowrap">
+            <span className="mx-5 md:text-2xl text-4xl whitespace-nowrap">
               <strong>E-Classroom</strong>
             </span>
            
           </div>
-          <div className="flex justify-around items-center">
+          <div className="flex box-border p-2 justify-around items-center">
           <button className="bg-yellow-300 font-bold outline-none box-border p-2 rounded-md">
               Live
             </button>
@@ -80,7 +80,7 @@ const Project = () => {
 
         {/* bottom */}
 
-        <div className="flex   w-[50vw] sm:shrink-0  overflow-hidden bg-white flex-col justify-between sm:w-[70%] relative  drop-shadow-lg border-3 rounded-l-none  box-border p-4 h-[400px] sm:h-[400px] rounded-2xl">
+        <div className="flex h-[500px]  w-[30%] sm:shrink-0  overflow-hidden bg-white flex-col justify-between sm:w-[70%] relative  drop-shadow-lg border-3 rounded-l-none  box-border p-4  sm:h-[400px] rounded-2xl">
           <span>
             <h1 className="box-border text-center font-bold text-white bg-black  p-2 absolute top-0 left-0 w-full">
               ClipCraft
@@ -91,12 +91,12 @@ const Project = () => {
             </h1>
           </span>
           <div className="flex flex-col text-black justify-center items-center box-border p-2">
-            <span className="mx-5 text-4xl">
+            <span className="mx-5 md:text-2xl text-4xl">
               <strong>ClipCraft</strong>
             </span>
            
           </div>
-          <div className="flex justify-around items-center">
+          <div className="flex box-border p-2 justify-around items-center">
           <button className="bg-yellow-300 font-bold outline-none  box-border p-2 rounded-md">
               Live
             </button>
