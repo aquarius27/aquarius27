@@ -4,20 +4,21 @@ import { FaDownload, FaGithub,FaLinkedinIn, } from 'react-icons/fa';
 import { FaFileArrowDown, FaTwitter } from 'react-icons/fa6';
 import { SiLeetcode } from "react-icons/si";
 
-const ResumeFile = '/vitthalkokare.pdf'
+const ResumeFile = 'https://drive.google.com/uc?id=1HB0u1NIp_kcTMO92ezc0J-nSvSNu9_46'
 
 
 const SocilLinks: React.FC = () => {
 
-  const ResumeDownload =(url: string)=>{
+  const ResumeDownload =async (url: string)=>{
     const aTag = document.createElement('a');
-    aTag.href = url;
+    aTag.href = await url;
     aTag.setAttribute("download",'vtitthal');
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();
 
   }
+ 
   
 
   return (
