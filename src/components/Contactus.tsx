@@ -43,17 +43,18 @@ const Contacts: React.FC = () => {
   }
 
   return (
-   <div className='text-white md:h-fit  flex sm:justify-center justify-around w-full items-center flex-col  '>
+   <div className='text-white box-border items-center sm:flex sm:flex-row justify-evenly p-4 mx-auto w-[90%] flex flex-col'>
 
-      <div className='sm:flex-col flex w-full   justify-evenly'>
+      <div className=' flex w-full  justify-evenly'>
         <div className='box-border p-3'>
         <h1 className='text-green-400 text-3xl font-normal box-border p-2'>Connect with me</h1>
           <span className='flex box-border p-2 items-center'><FaLocationDot/><h1 className='mx-2'>Pune Maharashtra</h1></span>
           <span className='flex box-border p-2 items-center'><FaEnvelope/><h1 className='mx-2'>vitthalkokare777@gmail.com</h1></span>
           <SocilLinks/>
         </div>
-        <div>
-          <form action="" onSubmit={sendEmail} className='text-black'>
+        
+      </div>
+          <form action="" onSubmit={sendEmail} className='text-black w-full'>
             <h1 className='text-green-400 text-3xl font-normal box-border p-2'>Contact me</h1>
             <span className='flex flex-col'>
               <input onChange={(e) => setName(e.target.value)} type="text" placeholder='Full Name' value={name} required  className='box-border p-2 rounded-2xl'/>
@@ -67,11 +68,8 @@ const Contacts: React.FC = () => {
             <button type='submit'  className='box-border py-2 px-5 bg-blue-500 rounded-2xl'>Submit</button>
 
           </form>
-        </div>
-      </div>
 
 
-<span className='w-[70%] h-1 box-border m-3 bg-white'></span>
 
    </div>
   )

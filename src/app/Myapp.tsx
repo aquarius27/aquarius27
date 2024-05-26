@@ -48,9 +48,9 @@ const Myapp = () => {
  
 
   return (
-    <div className="sm:w-[400px] w-[100%] relative    flex flex-col mx-auto">
+    <div className="flex  w-full box-border p-4 relative min-w-[600px] flex-col">
 
-      <span className="fixed sm:hidden  right-5 md:hidden flex flex-col justify-center items-center h-screen">
+      <span className="fixed sm:flex  left-3 hidden  flex-col justify-center items-center h-screen">
       <Compo pItem={[
         {btnIcon:<FaRegUserCircle/>, label:'About',onclick() {handleButtonClick(Profile)}},
         {btnIcon:<FaCircleNodes/>, label:'Projects',onclick() {handleButtonClick(Projects)}},
@@ -60,7 +60,7 @@ const Myapp = () => {
       ]}/>
       </span>
 
-      <span className="fixed bg-[#111a36] overflow-hidden items-center h-screen transition-all duration-300 fade z-50 hidden justify-center drop-shadow-2xl shadow-2xl sm:flex md:flex right-0"
+      <span className="fixed bg-[#111a36] overflow-hidden items-center h-full transition-all duration-300 fade z-50 flex justify-center drop-shadow-2xl shadow-2xl sm:hidden  right-0"
       style={{width:`${isNav}px`}}
       >
       <button
@@ -79,7 +79,7 @@ const Myapp = () => {
       </span>
 
 
-      <div className="fixed bg-[#0e1630] h-[60px] z-40  items-center top-0 md:flex w-full sm:flex hidden">
+      <div className="fixed bg-[#0e1630] h-[60px] z-40  items-center top-0 flex w-full ">
         <span className="absolute left-2 top-0 drop-shadow-4xl">
           <h1 className="font-bold box-border p-2 text-white text-xl">
             <strong className="text-green-500">V</strong>itthal{" "}
@@ -88,41 +88,39 @@ const Myapp = () => {
         </span>
         <button
           onMouseDown={handleMenu}
-          className="text-white outline-none border-0 hover:scale-110 hover:text-green-500 absolute right-8 box-border p-2  text-2xl font-bold"
+          className="text-white sm:hidden flex outline-none border-0 hover:scale-110 hover:text-green-500 absolute right-8 box-border p-2  text-2xl font-bold"
         >
           <FaAnglesLeft />
         </button>
         
       </div>
 
-      <header
-        ref={Profile}
-        className="box-border justify-around h-screen md:w-[80%]  sm:h-fit md:h-fit   md:flex-col  flex sm:flex-col  relative  w-[80%] sm:w-full   mx-auto  "
-      >
-        <About />
-      </header>
+<section ref={Profile}>
+<About />
 
-      <section
-        ref={Projects}
-        className="relative w-[80%] md:w-[100%]  h-screen   sm:h-fit md:h-fit  sm:w-full mx-auto box-border   p-2 flex-col flex  items-center"
-      >
+</section>
+      
+
+     
+        <section ref={Projects}> 
         <Project />
-      </section>
 
-      <section
-        ref={Skills}
-        className="md:w-full h-screen  w-[80%]  sm:h-fit md:h-fit flex items-center mx-auto relative"
-      >
+        </section>
+
+        <section ref={Skills}>
         <SSkills />
-      </section>
-      <Education />
 
-      <section
-        ref={Contactus}
-        className="w-[80%] h-screen md:w-full  sm:h-fit md:h-fit  flex flex-col justify-center items-center mx-auto"
-      >
+        </section>
+
+        
+        <Education />
+        <section ref={Contactus}>
         <Contacts />
-      </section>
+
+        </section>
+     
+
+      
 
       <footer className=" w-[80%] mx-auto text-white flex text-sm opacity-40 justify-center items-center">
         <span className="w-full text-center">

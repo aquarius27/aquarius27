@@ -3,7 +3,7 @@ import React from 'react'
 const Education: React.FC = () => {
   return (
 
-<main className='  w-[50%] sm:w-full mx-auto relative flex justify-center items-center'>
+<main className='  w-full sm:w-[80%] mx-auto relative flex justify-center items-center'>
   <section className='w-[90%] relative box-border py-4'>
     <div className='bg-white box-border p-2 rounded-lg   flex-col  flex'>
       <span><strong>B-Tech in Computer Science & Engineering</strong></span>

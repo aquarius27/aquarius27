@@ -4,8 +4,7 @@ import { FaDownload, FaGithub,FaLinkedinIn, } from 'react-icons/fa';
 import { FaFileArrowDown, FaTwitter } from 'react-icons/fa6';
 import { SiLeetcode } from "react-icons/si";
 
-const ResumeFile = 'https://drive.google.com/uc?id=1HB0u1NIp_kcTMO92ezc0J-nSvSNu9_46'
-
+const ResumeFile = 'https://drive.google.com/uc?id=16h44FSe6UhlxwOJk9NZaxCmopLL3YL7Q'
 
 const SocilLinks: React.FC = () => {
 

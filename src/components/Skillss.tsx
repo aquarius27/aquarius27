@@ -1,6 +1,8 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { FaReact ,FaJava, FaPython,FaNodeJs, FaGithub, FaHtml5, FaCss3, FaDatabase, FaDocker, FaRadio} from "react-icons/fa6";
-import { SiExpress, SiGraphql, SiMongodb, SiMysql, SiNextdotjs,SiPostgresql,SiRedis,SiRedux,SiTailwindcss,SiTypescript } from "react-icons/si";
+import { SiExpress, SiGraphql, SiMongodb, SiMysql, SiNextdotjs,SiPostgresql,SiPostman,SiRedis,SiRedux,SiTailwindcss,SiTypescript, SiVisualstudiocode } from "react-icons/si";
+import SkillsComp, { skillsProps } from "./skillsComp";
+
 
 
 
@@ -9,82 +11,74 @@ interface FrontEnd{
 }
 const SSkills: React.FC = () =>{
 
+  const Languages:skillsProps[] = [
+    {label:"Java",icon:<FaJava/>},
+    {label:"Typescript",icon:<SiTypescript/>},
+    {label:"HTML5",icon:<FaHtml5/>},
+    {label:"CSS3",icon:<FaCss3/>},
+  ];
+  const Libraries:skillsProps[] = [
+    {label:"React.js",icon:<FaReact/>},
+    {label:"Redux Toolkit",icon:<SiRedux/>},
+
+  ];
+  const Frameworks:skillsProps[] = [
+    {label:"Node.js",icon:<FaNodeJs/>},
+    {label:"Express.js",icon:<SiExpress/>},
+    {label:"Next.js",icon:<SiNextdotjs/>},
+    {label:"TailwindCSS",icon:<SiTailwindcss/>},
+
+    
+
+  ]
+  const Database:skillsProps[] = [
+    {label:"SQL",icon:<SiMysql/>},
+    {label:"PostgreSQL",icon:<SiPostgresql/>},
+    {label:"MongoDB",icon:<SiMongodb/>},
+
+  ]
+  
+
+  const Devtools:skillsProps[] = [
+    {label:"Git",icon:<FaGithub/>},
+    {label:"Visual Studio Code",icon:<SiVisualstudiocode/>},
+    {label:"Postman",icon:<SiPostman/>},
+    {label:"Docker",icon:<FaDocker/>},
+
+
+  ]
+
+  const Skills:skillsProps[] = [
+    {label:"REST API & GraphQl"},
+    {label:"Object Oriented Programming"},
+    {label:"Data Structures and Algorithms"},
+    {label:"Problem Solving"}
+
+
+
+
+  ]
+
 
 
   return (
-    <main className="  items-center  sm:w-full  md:h-fit  flex justify-center flex-col sm:text-lg    mx-auto box-border drop-shadow-2xl shadow-2xl">
-      <div className="w-full items-center my-2    flex sm:flex-col">
-        <span className="  font-bold  text-2xl text-yellow-500 mx-2 ">Skills:</span>
-        <span className="  flex">
-        <span className={`skillItem`}><h1>Data Structure</h1></span>
-        <span className={`skillItem`}><h1>Problem Solving</h1></span>
-        <span className={`skillItem`}><h1>Object Oriented Programing</h1></span>
-
-        </span>
-      </div>
-
-      
-      {/* Languages */}
-      <div className="w-full items-center  my-2    flex sm:flex-col ">
-        <span className="  font-bold  text-2xl text-yellow-500 mx-2">Language:</span>
-        <span className="  flex">
-        <span className={`skillItem`}><FaJava/><strong className="text-lg">Java</strong></span>
-        <span className={`skillItem`}><FaPython/><strong className="text-lg">Python</strong></span>
-        <span className={`skillItem`}><SiTypescript/><strong className="text-lg">TypeScript</strong></span>
-        <span className={`skillItem`}><FaHtml5/><strong className="text-lg">HTML5</strong></span> 
-        <span className={`skillItem`}><FaCss3/><strong className="text-lg">CSS3</strong></span>
+   <main className="flex mx-auto flex-col justify-center relative box-border p-2 w-[90%]">
+    <span className="flex w-full justify-center items-center box-border p-2 text-2xl text-yellow-50">
+      <strong>Uncover The Expertise that shape my knowledge</strong>
+    </span>
+    <section className="grid relative sm:grid-cols-2 w-full gap-2 grid-cols-1 box-border p-2">
+    
+      <SkillsComp children={[{itemarr:Skills,compTag:"Skills"},{itemarr:Languages,compTag:"Languages"},{itemarr:Libraries,compTag:"Libraries"},{itemarr:Frameworks,compTag:"Frameworks"},{itemarr:Database,compTag:"Database"},{itemarr:Devtools,compTag:"Dev Tools"}]}      
+       
+      />
 
 
-
-        </span>
-      </div>
-{/* Libraries */}
-<div className="w-full items-center my-2    flex sm:flex-col">
-        <span className="font-bold  text-2xl text-yellow-500 mx-2 ">Libraries:</span>
-        <span className="  flex">
-        <span className={`skillItem`}><FaReact/><strong className="text-lg">React.js</strong></span>
-        <span className={`skillItem`}><SiRedux/><strong className="text-lg">Redux Toolkit</strong></span>
-
-        </span>
-      </div>
-{/* Frameworks */}
-<div className="w-full items-center my-2    flex sm:flex-col ">
-        <span className=" font-bold  text-2xl text-yellow-500 mx-2">Framework:</span>
-        <span className="  flex">
-        <span className={`skillItem`}><FaNodeJs/><strong className="text-lg">Node.js</strong></span>
-        <span className={`skillItem`}><SiExpress/><strong className="text-lg">Express.js</strong></span>
-        <span className={`skillItem`}><SiNextdotjs/><strong className="text-lg">Next.js</strong></span>
-        <span className={`skillItem`}><SiTailwindcss/><strong className="text-lg">TailwindCSS</strong></span>
-
-        </span>
-      </div>
-{/* Databases */}
-<div className="w-full items-center flex sm:flex-col">
-        <span className=" font-bold  text-2xl text-yellow-500 mx-2">Database:</span>
-        <span className=" flex">
-        <span className={`skillItem`}><FaDatabase/><strong className="text-lg">SQL</strong></span>
-        <span className={`skillItem`}><SiPostgresql/><strong className="text-lg">PostgresSQL</strong></span>
-        <span className={`skillItem`}><SiMongodb/><strong className="text-lg">MongoDB</strong></span>
-
-        </span>
-      </div>
-{/* Others */}
-<div className="w-full items-center my-2    flex sm:flex-col">
-        <span className=" font-bold text-2xl text-yellow-500 mx-2">Others:</span>
-        <span className=" flex">
-        <span className={`skillItem`}><FaGithub/><strong className="text-lg">Git/github</strong></span>
-        <span className={`skillItem`}><SiGraphql/><strong className="text-lg">GraphQL</strong></span>
-        <span className={`skillItem`}><SiRedis/><strong className="text-lg">Redis</strong></span>
-        <span className={`skillItem`}><FaDocker/><strong className="text-lg">Docker</strong></span>
+          
 
 
-        </span>
-      </div>
+    </section>
 
-      <span className='w-[70%] h-1 box-border m-3 bg-white'>.</span>
-
-
-    </main>
+   </main>
     
   );
 };
