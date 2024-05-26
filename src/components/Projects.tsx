@@ -6,13 +6,20 @@ import { FaAnglesLeft,
   FaCartShopping,} from "react-icons/fa6";
 import { SiExpress, SiGraphql, SiMongodb, SiMongoose, SiNextdotjs, SiPostgresql, SiPrisma, SiTailwindcss } from "react-icons/si";
 
-import Image from 'next/image'
-import img  from '../../public/eclassroom.png'
+import Image, { StaticImageData } from 'next/image'
+import ec1  from '../../public/eclassroom.png'
+import ec2  from '../../public/eclassroom1.png'
+import ck1  from '../../public/clickcart.png'
+import ck2  from '../../public/clickcart2.png'
+import ck3  from '../../public/clickcart3.png'
+
+
+
 
 
 
 type heroSlideProps = {
-  imglink: string
+  imglink: StaticImageData
   lable: string
 }
 
@@ -20,18 +27,20 @@ const Project = () => {
 
   const [Close,Open] = useState('none');
   const [IsDesc,setIsDesc] = useState(true);
-  const [Ecslide,setEcslide] = useState<heroSlideProps[]>([{imglink:'/eclassroom.png',lable:'img1'},
-  {imglink:'/eclassroom1.png',lable:'img2'},])
+  
 
 
    const Eclassroom:heroSlideProps[] = [
-    {imglink:'/eclassroom.png',lable:'img1'},
-    {imglink:'/eclassroom1.png',lable:'img2'},
+    {imglink:ec1,lable:'img1'},
+    {imglink:ec2,lable:'img2'},
     
   ]
   const Clickcart:heroSlideProps[] = [
-    {imglink:'/clickcart.png',lable:'img1'},
-    {imglink:'/clickcart.png',lable:'img2'},
+    {imglink:ck3,lable:'img3'},
+    {imglink:ck2,lable:'img2'},
+    {imglink:ck1,lable:'img1'},
+
+
     
   ]
 
@@ -102,8 +111,8 @@ const Project = () => {
          <div className="h-full justify-between items-center flex  w-full ">
           <button id="Eclassroom" onClick={(event) => slideHandlerLeft(event.currentTarget.id)}><FaAnglesLeft/></button>
                 <div ref={ecSlide} className="w-full box-border flex overflow-x-scroll srl px-2 rounded-xl h-full">
-                {Ecslide.map((item,index)=>(
-              <img src={item.imglink}  className='w-full shrink-0 ' alt={item.lable} />
+                {Eclassroom.map((item,index)=>(
+              <img src={item.imglink.src}  className='w-full shrink-0 ' alt={item.lable} />
           ))}
                 </div>
                 <button id="Eclassroom" onClick={(event) => slideHandlerRight(event.currentTarget.id)} ><FaAnglesRight/></button>
@@ -145,6 +154,7 @@ const Project = () => {
             </section>):(
             <section className="flex flex-col gap-2 w-full box-border overflow-y-scroll srl p-2">
               <strong className="box-border bg-white w-full z-50  sticky -top-3 p-2">Leveraging Technology</strong>
+              <div className="w-full h-[200px] gap-2 flex flex-col  overflow-y-scroll srl box-border ">
               <span className="flex w-full gap-2 bg-yellow-100 rounded-xl flex-col box-border p-2">
                 <strong>Client Side</strong>
                 <span className="flex items-center w-full justify-around">
@@ -231,6 +241,8 @@ const Project = () => {
 
               </span>
 
+              </div>
+
 
             </section>)}
 
@@ -266,8 +278,10 @@ const Project = () => {
 
 
 </section>):(
-<section className="flex flex-col gap-2 w-full box-border overflow-y-scroll srl p-2">
+<section className="flex flex-col  gap-2 w-full box-border p-2">
   <strong className="box-border bg-white w-full z-50  sticky -top-3 p-2">Leveraging Technology</strong>
+  
+  <div className="w-full h-[200px] gap-2 flex flex-col  overflow-y-scroll srl box-border ">
   <span className="flex w-full gap-2 bg-yellow-100 rounded-xl flex-col box-border p-2">
     <strong>Client Side</strong>
     <span className="flex items-center w-full justify-around">
@@ -329,6 +343,7 @@ const Project = () => {
     
 
   </span>
+  </div>
 
   
 
@@ -343,7 +358,7 @@ const Project = () => {
          <button id="Clickcart" onClick={(event) => slideHandlerLeft(event.currentTarget.id)} ><FaAnglesLeft/></button>
                 <span ref={ckSlide} className="w-full box-border flex overflow-x-scroll srl px-2 rounded-xl h-full">
                 {Clickcart.map((item,index)=>(
-              <img src={item.imglink}  className='w-full shrink-0 ' alt={item.lable} />
+              <img src={item.imglink.src}  className='w-full shrink-0 ' alt={item.lable} />
           ))}
                 </span>
                 <button id="Clickcart" onClick={(event) => slideHandlerRight(event.currentTarget.id)} ><FaAnglesRight/></button>

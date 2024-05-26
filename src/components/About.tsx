@@ -1,8 +1,5 @@
 import React from 'react'
-import { FaLinkedinIn , FaTwitter,FaGithub} from "react-icons/fa6";
-import { SiLeetcode } from "react-icons/si";
 import Image from 'next/image';
-import img1 from '.././../public/coverimg.png'
 import SocilLinks from './Sociallink';
 import logo from '../../public/vk.jpg'
 
