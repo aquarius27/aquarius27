@@ -36,7 +36,7 @@ const About = () => {
           <section className=' mt-5'>
          <h3 className='text-center sm:text-xl text-2xl  text-gray-200'>
           Hey there, I am a skilled MERN Full Stack developer with expertise in building dynamic and scalable web applications. 
-           My areas of Iterest are Web Development and Mobile Application Development.
+           My areas of Interest are Web Development and Mobile Application Development.
            I am looking for an opportunity wherein I can apply my knowledge,
            learn new things and increase my knowledge to a new level. And I like to capture !
          </h3>

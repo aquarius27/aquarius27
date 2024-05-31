@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import { FaReact ,FaJava, FaPython,FaNodeJs, FaGithub, FaHtml5, FaCss3, FaDatabase, FaDocker, FaRadio} from "react-icons/fa6";
-import { SiExpress, SiGraphql, SiMongodb, SiMysql, SiNextdotjs,SiPostgresql,SiPostman,SiRedis,SiRedux,SiTailwindcss,SiTypescript, SiVisualstudiocode } from "react-icons/si";
+import { SiExpress, SiGraphql, SiJavascript, SiMongodb, SiMysql, SiNextdotjs,SiPostgresql,SiPostman,SiRedis,SiRedux,SiTailwindcss,SiTypescript, SiVisualstudiocode } from "react-icons/si";
 import SkillsComp, { skillsProps } from "./skillsComp";
 
 
@@ -13,20 +13,28 @@ const SSkills: React.FC = () =>{
 
   const Languages:skillsProps[] = [
     {label:"Java",icon:<FaJava/>},
+    {label:"Node.js",icon:<FaNodeJs/>},
     {label:"Typescript",icon:<SiTypescript/>},
+    {label:"Javascript",icon:<SiJavascript/>},
+
+    
+  ];
+
+  const Frontend:skillsProps[] = [
+    {label:"React.js",icon:<FaReact/>},
     {label:"HTML5",icon:<FaHtml5/>},
     {label:"CSS3",icon:<FaCss3/>},
+    {label:"TailwindCSS",icon:<SiTailwindcss/>},
+
   ];
+
   const Libraries:skillsProps[] = [
-    {label:"React.js",icon:<FaReact/>},
     {label:"Redux Toolkit",icon:<SiRedux/>},
 
   ];
   const Frameworks:skillsProps[] = [
-    {label:"Node.js",icon:<FaNodeJs/>},
     {label:"Express.js",icon:<SiExpress/>},
     {label:"Next.js",icon:<SiNextdotjs/>},
-    {label:"TailwindCSS",icon:<SiTailwindcss/>},
 
     
 
@@ -68,7 +76,7 @@ const SSkills: React.FC = () =>{
     </span>
     <section className="grid relative sm:grid-cols-2 w-full gap-2 grid-cols-1 box-border p-2">
     
-      <SkillsComp children={[{itemarr:Skills,compTag:"Skills"},{itemarr:Languages,compTag:"Languages"},{itemarr:Libraries,compTag:"Libraries"},{itemarr:Frameworks,compTag:"Frameworks"},{itemarr:Database,compTag:"Database"},{itemarr:Devtools,compTag:"Dev Tools"}]}      
+      <SkillsComp children={[{itemarr:Skills,compTag:"Skills"},{itemarr:Frontend,compTag:"Frontend"},{itemarr:Languages,compTag:"Languages"},{itemarr:Libraries,compTag:"Libraries"},{itemarr:Frameworks,compTag:"Frameworks"},{itemarr:Database,compTag:"Database"},{itemarr:Devtools,compTag:"Dev Tools"}]}      
        
       />
 
